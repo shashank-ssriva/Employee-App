@@ -48,7 +48,7 @@
         </dependency>
     </dependencies>
      <build>
-        <finalName>employees-app-${BUILD_NUMBER}</finalName>
+        <finalName>employees-app-1.${BUILD_NUMBER}</finalName>
         <resources>
             <resource>
                 <directory>src/main/webapp</directory>
