@@ -21,7 +21,7 @@ class PythonOrgSearchTest1(unittest.TestCase):
         print("In simple")
         self.logger.info("In simple")
         browser = self.browser
-        browser.get('http://localhost:8080/employees-app/')
+        browser.get('http://localhost:8080/employee-app/')
         self.assertIn("Home", browser.title)
         search_box = browser.find_element_by_name('employeeName')
         search_box.send_keys('John')
