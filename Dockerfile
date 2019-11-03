@@ -34,7 +34,7 @@ RUN set -x \
     && rm bin/*.bat \
     && rm tomcat.tar.gz*
 
-ADD ./target/employees-app-1.${BUILD_NUMBER}.war $CATALINA_HOME/webapps/employees-app.war
+ADD ./target/*.war $CATALINA_HOME/webapps/employees-app.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
