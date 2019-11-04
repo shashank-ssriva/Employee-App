@@ -83,7 +83,7 @@
             </form>
             <form action ="jsp/new-employee.jsp">
                 <br></br>
-                <button type="submit" class="btn btn-primary  btn-md">Add New employee</button>
+                <button type="submit" class="btn btn-primary  btn-md">New employee</button>
             </form>
         </div>
     </body>
