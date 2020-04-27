@@ -10,7 +10,7 @@ class PythonOrgSearchTest1(unittest.TestCase):
 
     def setUp(self):
         print("In setUp")
-        caps = {'browserName': 'chrome'}
+        caps = {'browserName': 'firefox'}
         self.browser = webdriver.Remote(
             command_executor='http://localhost:4444/wd/hub',
             desired_capabilities=caps)
@@ -21,7 +21,7 @@ class PythonOrgSearchTest1(unittest.TestCase):
         print("In simple")
         self.logger.info("In simple")
         browser = self.browser
-        browser.get('http://localhost:8080/employee-app/')
+        browser.get('http://localhost:9080/employee-app-1.${BUILD_NUMBER}')
         self.assertIn("Home", browser.title)
         search_box = browser.find_element_by_name('employeeName')
         search_box.send_keys('John')

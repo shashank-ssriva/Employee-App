@@ -21,3 +21,13 @@ target/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.classpath
+.project
+.settings/org.eclipse.core.resources.prefs
+tomcat.9080/work/Tomcat/localhost/_/org/apache/jsp/jsp/new_002demployee_jsp.java
+tomcat.9080/work/Tomcat/localhost/_/org/apache/jsp/jsp/list_002demployees_jsp.java
+tomcat.9080/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java
+.vscode/settings.json
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
