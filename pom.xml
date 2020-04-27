@@ -103,6 +103,8 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <username>admin</username>
+                    <password>amix123</password>
                     <repository>192.168.43.55:8765/repository/docker-repo/employee-app</repository>
                     <tag>1.${BUILD_NUMBER}</tag>
                 </configuration>
