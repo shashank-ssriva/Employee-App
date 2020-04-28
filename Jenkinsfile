@@ -16,12 +16,12 @@ pipeline {
         }
         stage('Build WAR + Create Docker image') {
             steps {
-                sh 'mvn clean package'
+                sh '/usr/local/bin/mvn clean package'
             }
         }
         stage('Push Docker image to Nexus') {
             steps {
-                sh 'mvn dockerfile:push'
+                sh '/usr/local/bin/mvn dockerfile:push'
             }
         }
     }
