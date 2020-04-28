@@ -8,7 +8,7 @@
 
     <body>
         <div class="container">
-            <h2>Employees</h2>
+            <h2>Employees - Employees App Demo</h2>
             <!--Search Form -->
             <form action="employee" method="get" id="seachEmployeeForm" role="form">
                 <input type="hidden" id="searchAction" name="searchAction" value="searchByName">
