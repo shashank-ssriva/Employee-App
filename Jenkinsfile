@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    env.DOCKER_HOST="127.0.0.1:2375"
+    environment {
+        DOCKER_HOST = '127.0.0.1:2375'
+    }
     stages {
         stage('Check out code') {
             steps {
