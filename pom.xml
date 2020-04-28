@@ -105,7 +105,7 @@
                 <configuration>
                     <username>admin</username>
                     <password>amix123</password>
-                    <repository>https://192.168.43.55:8765/employee-app</repository>
+                    <repository>192.168.43.55:8765/employee-app</repository>
                     <tag>1.0.${BUILD_NUMBER}</tag>
                 </configuration>
             </plugin>
