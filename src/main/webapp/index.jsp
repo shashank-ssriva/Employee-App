@@ -1,6 +1,6 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-<jsp:forward page="/employee" /> 
-</body>
+  <body>
+    <h2>Employee App</h2>
+    <jsp:forward page="/employee" />
+  </body>
 </html>
