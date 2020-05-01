@@ -24,5 +24,10 @@ pipeline {
                 sh '/usr/local/bin/mvn dockerfile:push'
             }
         }
+        stage('Deploy on K8s') {
+            steps {
+                sh "ansible-playbook ansible-playbook ansible-k8s-deploymeny.yaml"
+            }
+        }    
     }
 }
