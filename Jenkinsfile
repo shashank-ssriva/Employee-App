@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy on K8s') {
             steps {
-                sh "ansible-playbook ansible-playbook ansible-k8s-deploymeny.yaml"
+                sh "/usr/local/bin/ansible-playbook ansible-playbook ansible-k8s-deploymeny.yaml"
             }
         }    
     }
