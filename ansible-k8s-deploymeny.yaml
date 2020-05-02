@@ -8,10 +8,6 @@
   connection: local
   tasks:
     - name: Deploy EmployeeApp
-      command: "/usr/local/bin/helm install employee-app-test ./employee-app-chart --set service.internalPort=8080 --namespace=employee-app"
-      delegate_to: localhost
-      ignore_errors: yes
-    - name: Update EmployeeApp
-      command: "/usr/local/bin/helm upgrade employee-app-test ./employee-app-chart --set service.internalPort=8080 --namespace=employee-app"
+      command: "/usr/local/bin/kubectl apply -f employee-app.yaml --namespace=employee-app"
       delegate_to: localhost
       ignore_errors: yes
