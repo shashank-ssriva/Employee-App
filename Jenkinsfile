@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_HOST = 'tcp://127.0.0.1:2375'
-        BUILD_NUMBER = env.BUILD_NUMBER
+        BUILD_NUMBER = "env.BUILD_NUMBER"
     }
     stages {
         stage('Check out code') {
