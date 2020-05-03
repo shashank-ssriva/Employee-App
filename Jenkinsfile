@@ -3,6 +3,10 @@ pipeline {
     environment {
         DOCKER_HOST = 'tcp://127.0.0.1:2375'
     }
+    parameters {
+            string(description: 'Jenkins Build number', name: 'jenkinsBuildNum', defaultValue: env.BUILD_NUMBER)
+        }
+
     stages {
         stage('Check out code') {
             steps {
