@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy on K8s') {
             steps {
                 echo env.BUILD_NUMBER
-                sh '/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml --extra-vars "jenkBuildNum=env.BUILD_NUMBER"'
+                sh '/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml --extra-vars jenkBuildNum=env.BUILD_NUMBER'
             }
         }    
     }
