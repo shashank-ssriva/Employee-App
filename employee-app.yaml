@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: employee-app
-          image: 192.168.43.55:8765/employee-app:1.0.${env.BUILD_NUMBER}
+          image: 192.168.43.55:8765/employee-app:1.0.${BUILD_NUMBER}
           ports:
             - containerPort: 8080
 ---
