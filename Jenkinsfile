@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo env.BUILD_NUMBER
                 echo "${TAG}"
-                sh "/usr/local/bin/envsubst < employee-app.yaml | kubectl apply -f -"
+                sh "/usr/local/bin/envsubst < employee-app.yaml | /usr/local/bin/kubectl apply -f -"
             }
         }    
     }
