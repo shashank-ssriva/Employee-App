@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy on K8s') {
             steps {
                 echo env.BUILD_NUMBER
-                echo ${TAG}
+                echo "${TAG}"
                 sh "/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml"
             }
         }    
