@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo env.BUILD_NUMBER
                 echo "${TAG}"
-                sh "/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml"
+                sh "/usr/local/bin/envsubst < employee-app.yaml | kubectl apply -f -"
             }
         }    
     }
