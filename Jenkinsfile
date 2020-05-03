@@ -3,9 +3,6 @@ pipeline {
     environment {
         DOCKER_HOST = 'tcp://127.0.0.1:2375'
     }
-    parameters {
-            string(description: 'Jenkins Build number', name: 'jenkinsBuildNum', defaultValue: env.BUILD_NUMBER)
-        }
 
     stages {
         stage('Check out code') {
@@ -31,7 +28,7 @@ pipeline {
         stage('Deploy on K8s') {
             steps {
                 echo env.BUILD_NUMBER
-                sh '/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml'
+                sh '/usr/local/bin/ansible-playbook ansible-k8s-deploymeny.yaml --extra-vars "jenkBuildNum=env.BUILD_NUMBER"'
             }
         }    
     }
