@@ -73,7 +73,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <finalName>employees-app-${project.version}</finalName>
+                    <finalName>employees-app-1.0.${project.version}</finalName>
                     <archive>
                         <manifest>
                             <mainClass>com.example.employees.Main</mainClass>
