@@ -7,7 +7,7 @@
     <name>employees-app Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
-        <tomcat.version>7.0.57</tomcat.version>
+        <tomcat.version>7.0.107</tomcat.version>
     </properties>
     <dependencies>
         <dependency>
