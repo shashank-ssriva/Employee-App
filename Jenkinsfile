@@ -12,8 +12,6 @@ pipeline {
         }
         stage('SonarQube analysis') {
             steps {
-                echo env.BUILD_NUMBER
-                sh "/usr/local/bin/envsubst < sonar-project.properties"
                 sh "/Users/admin/Downloads/sonar-scanner-4.0.0.1744-macosx/bin/sonar-scanner"
             }
         }
